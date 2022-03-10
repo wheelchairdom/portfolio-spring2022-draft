@@ -752,7 +752,7 @@ body {
   background-color: white;
 }
 
-.cover-image:hover .title {
+.cover-image[data-coverstate=active] .title {
   opacity: 1;
 }
 

@@ -28,10 +28,9 @@ document.querySelectorAll('.animate-on-scroll').forEach((section) => {
     myobserver.observe(section);
 });
 
-// ALBUM JS
-$(function () {
-    $("tr.song-row").on("click", function () {
-        $("tr.song-row").removeClass("-active");
-        $(this).addClass("-active");
+const mycoverimages = document.querySelectorAll('.cover-image');
+for (let i = 0, len = mycoverimages.length; i < len; i++) {
+    mycoverimages[i].addEventListener('click', function (e) {
+        this.setAttribute('data-coverstate', 'active');
     });
-});
+};
