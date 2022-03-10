@@ -1,98 +1,309 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>wheelchairdom's Portfolio</title>
-
-    <!-- HTML5 -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-    <!-- VIEWPORT FOR MOBILE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheelchairdom portfolio draft</title>
 
     <!-- ADOBE FONTS -->
-    <link rel="stylesheet" href="https://use.typekit.net/bri2pok.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ulx1ldv.css">
 
-    <!-- MAIN CSS FILE -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-
+    <!-- MAIN CSS STYLES -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class="site-header">
-        <div class="container">
-            <div class="site-branding">
-                <h1><a href="index.html">wheelchairdom</a></h1>
+        <div class="site-id">
+            <div class="logo">
+                <a href="index.html"><img src="img/tuws-web-logo.png" alt="tuws logo"></a>
             </div>
-            <nav class="site-navigation ">
-                <div class="menu-button navicon">Menu</div>
-                <ul class="nav">
-                    <li class="hidden"><a href="index.html">Home</a></li>
-                    <li><a href="index.html#work">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
-                </ul>
-            </nav>
-        </div><!-- END CONTAINER -->
+            <h1 class="hide-visually"><a href="index.html">My Framework</a></h1>
+        </div>
+        <nav class="site-nav" data-navstate="closed">
+            <h2 class="menu-button">
+                <span class="hide-visually">Menu</span>
+                <svg width="30" height="30">
+                    <title>Menu</title>
+                    <rect id="menubar-top" y="0" width="30" height="3"></rect>
+                    <rect id="menubar-middle" y="8" width="30" height="3"></rect>
+                    <rect id="menubar-bottom" y="16" width="30" height="3"></rect>
+                </svg>
+            </h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Connect</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="site-main">
-        <div class="container">
 
-
-            <section id="work" class="text-centered">
-
-                <div class="controls">
-                    <button class="filter alt" data-filter="all">All</button>
-                    <button class="filter alt" data-filter=".print">Print</button>
-                    <button class="filter alt" data-filter=".web">Web</button>
-                    <button class="filter alt" data-filter=".motion">Motion</button>
+        <section class="album-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column">
+                        <div class="cover-image">
+                            <img src="https://picsum.photos/1000" class="thumbnail">
+                            <div class="title">
+                                <table class='album-songs'>
+                                    <tr class='song-row'>
+                                        <td>
+                                            <h3>Branding</h3>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <table class='album-songs'>
+                                    <tr class='song-row -active'>
+                                        <td><a href="times.html">Times Supermarkets</a></td>
+                                        <td>Logo</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>Bahir Dar</td>
+                                        <td>Logo</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>tuws</td>
+                                        <td>Brand</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>ku&lsquo;oko&lsquo;a Foundation</td>
+                                        <td>Identity</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half column">
+                        <div class="cover-image">
+                            <img src="https://picsum.photos/1000" class="thumbnail">
+                            <div class="title">
+                                <table class='album-songs'>
+                                    <tr class='song-row'>
+                                        <td>
+                                            <h3>Websites</h3>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <table class='album-songs'>
+                                    <tr class='song-row -active'>
+                                        <td>indgns</td>
+                                        <td>UX/UI</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>tuws</td>
+                                        <td>UX/UI</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>ku&lsquo;oko&lsquo;a Foundation</td>
+                                        <td>Web Design</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half column">
+                        <div class="cover-image">
+                            <img src="https://picsum.photos/1000" class="thumbnail">
+                            <div class="title">
+                                <table class='album-songs'>
+                                    <tr class='song-row'>
+                                        <td>
+                                            <h3>Motion</h3>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <table class='album-songs'>
+                                    <tr class='song-row -active'>
+                                        <td>Times Supermarkets</td>
+                                        <td>Logo</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>Bahir Dar</td>
+                                        <td>Logo</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>tuws</td>
+                                        <td>Brand</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>ku&lsquo;oko&lsquo;a Foundation</td>
+                                        <td>Identity</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half column">
+                        <div class="cover-image">
+                            <img src="https://picsum.photos/1000" class="thumbnail">
+                            <div class="title">
+                                <table class='album-songs'>
+                                    <tr class='song-row'>
+                                        <td>
+                                            <h3>Photography</h3>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <table class='album-songs'>
+                                    <tr class='song-row -active'>
+                                        <td>Times Supermarkets</td>
+                                        <td>Logo</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>Bahir Dar</td>
+                                        <td>Logo</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>tuws</td>
+                                        <td>Brand</td>
+                                    </tr>
+                                    <tr class='song-row'>
+                                        <td>ku&lsquo;oko&lsquo;a Foundation</td>
+                                        <td>Identity</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="mixcontainer group">
-                    <a href="timeslogo.html" class="mix print"><img
-                            src="img/CorporateLogo_Times portfolio site cover white bg.jpg" alt="placeholder" /></a>
-                    <a href="bahirdarlogo.html" class="mix print"><img src="img/TourismLogo_DominicNobriga white bg.jpg"
-                            alt="placeholder" /></a>
-                    <a href="indgns.html" class="mix web"><img src="img/indgns single page site portfolio thumbnail.jpg"
-                            alt="placeholder" /></a>
-                    <a href="book-cover.html" class="mix print"><img
-                            src="img/BookTrilogy_DominicNobriga mockup ALL thumbnail.jpg" alt="placeholder" /></a>
-                    <a href="thebeach.html" class="mix motion"><img src="img/Nobriga_Dominic_proj1_final_thumbnail.jpg"
-                            alt="placeholder" /></a>
-                    <a href="wolvesprocess.html" class="mix motion"><img
-                            src="img/BookTrilogy_TheWolves_DominicNobriga video thumbnail.jpg" alt="placeholder" /></a>
+        <!-- <section class="hero animate-on-scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column">
+                        <img src="https://picsum.photos/1000" alt="placeholder">
+                    </div>
+                    <div class="one-half column">
+                        <div class="cover-image">
+                            <img src="https://picsum.photos/1000" class="thumbnail">
+                            <div class="title">
+                                <h2>Lorem Ipsum</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half column">
+                        <img src="https://picsum.photos/1000" alt="placeholder">
+                    </div>
+                    <div class="one-half column">
+                        <img src="https://picsum.photos/1000" alt="placeholder">
+                    </div>
                 </div>
+            </div>
+        </section> -->
 
+        <!-- <section class="album">
+            <section class='album-playlist'>
+                <div class='album-image'>
+                    <img src='https://picsum.photos/1100'>
+                </div>
+                <div class='album-content'>
+                    <header class='header'>
+                        <h2 class='title'>
+                            Branding
+                        </h2>
+                    </header>
+                    <table class='album-songs'>
+                        <tr class='song-row -active'>
+                            <td>Times Supermarkets</td>
+                            <td>Logo</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>Hourglass</td>
+                            <td>4:10</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>Clarity</td>
+                            <td>4:10</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>Follow you down</td>
+                            <td>4:10</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>I want you to know</td>
+                            <td>4:10</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
+        </section> -->
 
-        </div>
+        <section class="album">
+            <section class='album-playlist'>
+                <div class='album-image'>
+                    <ul class="hovercaps">
+                        <li>
+                            <a href="#">
+                                <img src='https://picsum.photos/1100'>
+                                <div class="caption">
+                                    <h3>Title goes here</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='album-content'>
+                    <header class='header'>
+                        <h2 class='title'>
+                            Branding
+                        </h2>
+                    </header>
+                    <table class='album-songs'>
+                        <tr class='song-row -active'>
+                            <td>Times Supermarkets</td>
+                            <td>Logo</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>Hourglass</td>
+                            <td>4:10</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>Clarity</td>
+                            <td>4:10</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>Follow you down</td>
+                            <td>4:10</td>
+                        </tr>
+                        <tr class='song-row'>
+                            <td>I want you to know</td>
+                            <td>4:10</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
 
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <nav class="site-navigation">
-                <ul class="nav group">
-                    <li><a href="index.html#work">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
-                </ul>
-            </nav>
-        </div><!-- END CONTAINER -->
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subpage.html">Subpage</a></li>
+            </ul>
+        </nav>
     </footer>
 
-    <!-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- MIXIT UP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-
-
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
 
     <!-- MAIN JS -->
     <script src="js/script.js"></script>

@@ -1,100 +1,41 @@
-@import "base";
+/* GLOBAL RESETS */
+* { box-sizing: border-box; }
 
-/* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
----------------------------------
-	#TYPOGRAPHY OVERRIDES
-		#@FONT-FACE
-        #BODY
-		#HEADINGS
-		#PARAGRAPHS
-    #LAYOUT OVERRIDES
-		#BODY
-		#CONTAINER
-    #NAVIGATION
-        #SITE-BRANDING
-        #SITE-NAVIGATION
-    #CONTENT
-        #SECTIONS
---------------------------------- */
+// VARIABLES
+$color-text-body: rgba(61,57,53,.8);
+$color-text-headings: rgba(61,57,53,1);
+$color-background: rgba(239,228,212,1);
+$color-accent: rgba(92,96,77,1);
+// $color-accent-dark: rgba(158,0,0,1);
+// $color-accent-light: rgba(255,202,202,1);
+$color-accent-dark: rgb(57, 59, 48);
+$color-accent-light: rgb(130, 136, 109);
+$color-link: rgba(92,96,77,1);
+$color-link-dark: rgb(57, 59, 48);
+$color-accent-red: rgba(255,105,97,1);
+$color-accent-yellow: rgba(255,253,209,1);
 
-/* Custom Overrides */
+$color-lightgrey: rgba(61,57,53,.5);
 
-.mixcontainer .mix{
-    
-    display: inline-block;
-    //float: left;
-    
-    width: 49%;
-    margin-right: -4px;
-    padding: 0 .5%;
-    
-    @media(min-width: $breakpoint-small) {
-        width: 24%;
-        //margin: .5%;
-    }
-    
-    
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-    
-    
-	display: none;
-}
+$font-family-sans: 'english-grotesque', Helvetica, Arial, Helvetica, sans-serif;
+$font-family-serif-display: 'freight-display-pro', Georgia, 'Times New Roman', Times, serif;
+$font-family-serif: 'freight-text-pro', Georgia, 'Times New Roman', Times, serif;
 
-#work {
-    padding-bottom: 5em; 
-    min-height: 20em; 
-}
+// BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
 
-.controls {
-    margin-bottom: 2em;
-}
-
-
-.post-navigation {
-    text-align: center;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    margin: 2em 0 4em 0;
-    
-    a {
-        display: inline-block;
-    }
-    .column { margin-bottom: 0; }
-    .column:first-child a { float: left; margin-left: 1em; }
-    .column:last-child a { float: right;  margin-right: 1em;}
-    
-}
-
-.icon-char {
-    font-size: 2em;
-    font-weight: 200;
-    display: block;
-    margin-top: .25em;
-    margin-bottom: .25em;
-}
-
-.hero {
-    position: relative;
-    overflow: hidden;
-    min-height: 400px;
-    padding: 0;
-    
-    img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-    }
-}
-
-body {
-}
-
-h1, h2, h3, h4, h5, h6 {
-}
+// IMPORTS
+@import "partials/toc";
+@import "partials/typography";
+@import "partials/helpers";
+@import "partials/buttons";
+@import "partials/media";
+@import "partials/layout";
+@import "partials/grid";
+@import "partials/structure";
+@import "partials/sitenav";
+@import "partials/animations";
+@import "partials/album";
 

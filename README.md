@@ -1,2 +1,4 @@
-# [myportfolio](https://johndoenma.github.io/myportfolio/ "my portfolio")
-my portfolio
+# personalframework
+A front-end starter for creating small websites
+
+[View the demo](https://wheelchairdom.github.io/personalframework/)
